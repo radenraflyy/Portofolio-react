@@ -19,7 +19,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
 function App() {
-  const [title, setTitle] = useState("My Portofolio 👩‍🚀")
+  const [title, setTitle] = useState("RaDEN. Personal Website 👩‍🚀")
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
