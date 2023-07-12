@@ -1,0 +1,183 @@
+  .container{
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px 10px;
+  }
+
+  .container-dark{
+    @extend .container;
+    box-shadow: 0 3px 4px rgba(255, 255, 255, 0.2);
+  }
+
+  .title-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: absolute;
+    top: 75px;
+    gap: 80px;
+    .line{
+      width: 75%;
+      height: 2px;
+      background-color: #bbb;
+      transform: rotate(90deg);
+    }
+
+    h3{
+      color: #bbb;
+      margin: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  .wrapper-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5vw;
+
+    .content-left{
+
+      h1, p{
+        text-align: left;
+      }
+
+      .sosmed{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .bg-sosmed{
+          color: #fff;
+          background-color: #333;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+        }
+
+        .dark-bg{
+          @extend .bg-sosmed;
+          color: #333;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .address{
+      display: flex;
+      text-align: left;
+      gap: 20px;
+
+      .detaiA {
+        h3{
+          margin: 0;
+          line-height: 37px;
+        }
+
+        .contentA{
+          margin: 0;
+        }
+
+        .contentE{
+          width: 100%;
+          margin: 0;
+          font-size: 16px;
+        }
+      }
+
+      .iconA{
+        margin-top: 10px;
+        h3{
+          margin: 0;
+        }
+      }
+    }
+
+
+
+    .wrapper-form{
+      border-radius: 12px;
+      background-color: #bbb;
+
+      form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 12px;
+
+        label{
+          display: flex;
+        }
+
+        textarea{
+          padding: 13px 10px 0 10px;
+          margin-bottom: 40px;
+          border-radius: 12px;
+        }
+
+        button{
+          padding: 10px;
+          font-size: 20px;
+          background-color: #333;
+          color: #fff;
+          border-radius: 20px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          box-shadow: 8px 8px #fff;
+
+          &:active{
+            box-shadow: 0px 0px #f1f1f1;
+            transform: translateY(8px);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .wrapper-contact{
+      display: block;
+      grid-template-columns: unset;
+    }  
+  }
+
+
+  @media (max-width: 723px) {
+    .wrapper-contact{
+      margin-top: 50px;
+      .sosmed{
+        justify-content: center;
+      }
+    }  
+
+    .title-contact{
+      display: block;
+      left: 50%;
+      transform: translate(-50%);
+      top: 30px;
+      .line{
+        width: 100%;
+        transform: rotate(0deg);
+      }
+  
+      h3{
+        transform: rotate(0deg);
+      }
+    }
+
+    .address{
+        .contentE{
+          width: 100%;
+          margin: 0;
+          font-size: 1px;
+        }
+      }
+  }

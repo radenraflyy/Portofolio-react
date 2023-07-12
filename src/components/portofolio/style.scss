@@ -1,0 +1,104 @@
+.container{
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+}
+
+.container-dark{
+  @extend .container;
+  box-shadow: 0 3px 4px rgba(255, 255, 255, 0.2);
+}
+
+.wrapper-cwork{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  column-gap: 20px;
+  position: relative;
+
+  .title{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 65px;
+      top: 100px;
+      color: #333;
+
+    h3{
+      transform: rotate(90deg);
+      margin-bottom: 70px;
+      color: #bbb;
+    }
+
+    .line{
+      width: 70%;
+      height: 2px;
+      background-color: #bbb;
+      transform: rotate(90deg);
+    }
+  }
+
+  .image-porto{
+    text-align: left;
+    flex: 25%;
+    max-width: 25%;
+
+    img{
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+      border-radius: 12px
+    }
+   }
+
+   .dark-text{
+    @extend .image-porto;
+    color: #f1f1f1;
+   }
+}
+
+
+@media screen and (max-width: 800px) {
+  .wrapper-cwork{
+
+    .image-porto{
+    margin-top: 70px;
+      -ms-flex: 80%;
+      flex: 80%;
+      max-width: 80%;
+    }
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .wrapper-cwork{
+
+    .title{
+      left: 50%;
+      top: 0;
+
+    h3{
+      transform: rotate(0deg);
+      margin-bottom: 10px;
+    }
+
+    .line{
+      transform: rotate(0deg);
+    }
+  }
+    
+    .image-porto{
+      margin-top: 70px;
+      -ms-flex: 95%;
+      flex: 95%;
+      max-width: 95%;
+    }
+  }
+}

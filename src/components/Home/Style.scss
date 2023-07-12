@@ -1,0 +1,159 @@
+.container{
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+
+  .image img{
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12%;
+    color: #fff;
+
+    h1{
+      font-size: 4.7vw;
+      max-width: 800px;
+    }
+
+    .btn {
+      padding: 10px 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      outline: none;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover{
+        box-shadow: 10px 10px;
+      }
+    }
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      h3{
+        position: absolute;
+        bottom: 70px;
+        right: -5px;
+        transform: rotate(90deg);
+        font-weight: 300;
+        animation: slideAnimation 0.8s ease infinite alternate;
+      }
+
+      .darks{
+        color: #fff;
+      }
+
+      .line{
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        width: 4%;
+        transform: rotate(90deg);
+        height: 5px;
+        background-color: #bbb;
+        border-radius: 10px;
+        animation: slideAnimationLine 0.8s ease infinite alternate;
+      }
+
+      .footer-left{
+        h2{
+          position: absolute;
+          bottom: 70px;
+          left: -5px;
+          font-size: 19.5px;
+          transform: rotate(90deg);
+          font-weight: 300;
+          animation: slideAnimation 0.8s ease infinite alternate;
+        }
+
+        .darks{
+          color: #fff;
+        }
+  
+        .line-left{
+          position: absolute;
+          bottom: 50px;
+          left: 0;
+          width: 4%;
+          transform: rotate(90deg);
+          height: 5px;
+          background-color: #bbb;
+          border-radius: 10px;
+          animation: slideAnimationLine 0.8s ease infinite alternate;
+        }
+      }
+  }
+} 
+
+.container-dark {
+  @extend .container;
+  box-shadow: 0 3px 4px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideAnimation {
+  0% {
+    bottom: 120px;
+  }
+  50% {
+    bottom: 90px;
+  }
+  100% {
+    bottom: 120px;
+  }
+}
+
+@keyframes slideAnimationLine {
+  0%, 100% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 614px) {
+  .container{
+    
+    .footer{
+        h3{
+          right: -20px;
+        }
+
+        
+      .line{
+        right: -13px;
+        width: 15%;
+      }
+
+      .footer-left{
+        h2{
+          left: -20px;
+        }
+  
+        .line-left{
+          left: -13px;
+          width: 15%;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,41 @@
+footer{
+  width: 100%;
+}
+.wrapperF{
+  width: 100%;  
+  margin: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+
+
+  h3{
+    margin-right: 4vw;
+    font-size: 14px;
+  }
+
+  h1{
+    margin-left: 6vw;
+    font-size: 25px;
+  }
+}
+
+.wrapperF-dark{
+  @extend .wrapperF;
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+@media (max-width: 535px) {
+  .wrapperF{
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+
+    h3{
+      margin: 0;
+    }
+  }  
+}

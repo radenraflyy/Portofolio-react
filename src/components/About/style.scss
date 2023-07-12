@@ -1,0 +1,174 @@
+.wrapper{
+  margin-top: 100px;
+}
+
+.container{
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+}
+
+.container-about1{
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 30px;
+
+  .my-image {
+    border-radius: 12px;
+    box-shadow: 5px 6px rgba(96, 96, 96, 0.3);
+  }
+  
+  .my-image img {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+  
+    &:hover {
+      transform: scale(0.95); /* Mengurangi skala gambar */
+    }
+  }
+
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 290px;
+
+    .line{
+      width: 100%;
+      height: 3px;
+      transform: rotate(90deg);
+      background-color: #bbb;
+    }
+
+    h3{
+      margin: 0 0 100px 0;
+      width: 100px;
+      transform: rotate(-90deg);
+      color: #bbb
+    } 
+  }
+
+  .content-about{
+    text-align: left;
+    max-width: 60%;
+    
+    h1{
+      font-size: 50px;
+      transition: 0.6s ease;
+    }
+
+    .contentH1{
+      font-size: 50px;
+      color: #f1f1f1;
+      transition: 0.6s ease;
+    }
+
+    p{
+      font-size: 20px;
+      transition: 0.6s ease;
+    }
+
+    .contentP{
+      font-size: 20px;
+      color: #f1f1f1;
+      transition: 0.6s ease;
+    }
+  }
+
+  .button-about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+
+    .btn1{
+      padding: 10px 20px;
+      color: #333;
+      background-color: #dda200;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 3px 4px #999;
+    }
+
+    button:active {
+      box-shadow: 0 0px #666;
+      transform: translateY(4px);
+    }
+
+    .btndark1{
+      @extend .btn1;
+      color: #f1f1f1;
+    }
+
+    .btn2{
+      @extend .btn1;
+      border: 3px dashed;
+      background-color: transparent;
+    }
+
+    .btndark2{
+      @extend .btn2;
+      color: #f1f1f1;
+    }
+  }
+}
+
+
+.container-dark {
+  @extend .container;
+  box-shadow: 0 3px 4px rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 792px) {
+  .container-about1{
+    flex-direction: column;
+    padding: 10px;
+
+    .about-me{
+      margin-bottom: 0;
+      margin-top: 20px;
+      height: 50px;
+  
+      .line{
+        transform: rotate(0);
+        background-color: #bbb;
+      }
+
+      h3{
+        margin: 0;
+        transform: rotate(0);
+      }
+    }
+
+    .content-about {
+      text-align: le
+      ;
+      max-width: 100%;
+      h1{
+        margin: 0;
+      }
+    }
+
+    .button-about{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }  
+  }
+}

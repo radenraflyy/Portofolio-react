@@ -1,0 +1,19 @@
+$font-stack: 'Courier New', Courier, monospace;
+$primary-color: #f1f1f1;
+$primary-color-dark: #333;
+
+body {
+  background-color: $primary-color;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.dark{
+  background-color: $primary-color-dark;
+}

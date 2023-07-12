@@ -1,0 +1,28 @@
+.cotainer-skillC{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 30%;
+  padding: 12px;
+}
+
+.wrapper-skillC{
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 40px;
+}
+
+
+@media (max-width: 586px) {
+  .cotainer-skillC{
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
