@@ -1,1 +1,1 @@
-https://cdn-icons-png.flaticon.com/512/3039/3039382.png
+Dengan bangga aku mempersembahkan kepada Anda situs web pribadiku, sebuah rumah digital yang menjelma menjadi refleksi dari jiwaku, tempat di mana kisah hidupku ditulis dalam kode dan piksel, meluapkan bakat dan minat yang tak terbatas, serta memberikan ruang bagi inspirasi untuk tumbuh dan memancar ke segala penjuru duni IT.
