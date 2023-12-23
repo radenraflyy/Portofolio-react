@@ -29,10 +29,9 @@ const MySkills = () => {
               <div className={darkMode ? "dark-content" : "content-skills"}>
                 <h1>What My Programming Skills Includes?</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis, delectus ab quidem maiores necessitatibus architecto
-                  non id excepturi consequatur ducimus error quasi obcaecati
-                  minima beatae repellat, sit inventore sed sint?
+                  My programming skills encompass proficiency in multiple
+                  languages, expertise in problem-solving through code, and a
+                  strong foundation in software development principles.
                 </p>
               </div>
             </div>
@@ -40,14 +39,14 @@ const MySkills = () => {
               <button
                 className={`switch-button ${tab === "skills" ? "active" : ""}`}
                 onClick={() => handleChangeTab("skills")}
-                style={{color: darkMode ? '#f1f1f1' : ''}}
+                style={{ color: darkMode ? "#f1f1f1" : "" }}
               >
                 Skills
               </button>
               <button
                 className={`switch-button ${tab === "tools" ? "active" : ""}`}
                 onClick={() => handleChangeTab("tools")}
-                style={{color: darkMode ? '#f1f1f1' : ''}}
+                style={{ color: darkMode ? "#f1f1f1" : "" }}
               >
                 Tools
               </button>

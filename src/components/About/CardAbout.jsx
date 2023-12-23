@@ -21,7 +21,7 @@ const CardAbout = () => {
             <FontAwesomeIcon icon={faArchive} color="#dda200"/>
           </div>
           <div className="content">
-            <h1>12+</h1>
+            <h1>3+</h1>
             <p>Years Of Experience</p>
           </div>
           <div className="row">
@@ -33,7 +33,7 @@ const CardAbout = () => {
             <FontAwesomeIcon icon={faCheckToSlot} color="#dda200"/>
           </div>
           <div className="content">
-            <h1>43+</h1>
+            <h1>51+</h1>
             <p>Completed Projects</p>
           </div>
           <div className="row">
@@ -45,7 +45,7 @@ const CardAbout = () => {
             <FontAwesomeIcon icon={faPeopleGroup} color="#dda200"/>
           </div>
           <div className="content">
-            <h1>10+</h1>
+            <h1>5+</h1>
             <p style={{padding: '0 25px'}}>Happy Client</p>
           </div>
           <div className="row">

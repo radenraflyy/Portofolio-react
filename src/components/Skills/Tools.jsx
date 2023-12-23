@@ -1,5 +1,7 @@
 import './skills.scss'
 import { FaGit, FaGithub, FaGitlab, FaChrome, FaSpotify, FaCoffee, FaNpm, FaWhatsapp} from 'react-icons/fa'
+import { SiJirasoftware, SiPostman, SiTrello } from "react-icons/si"
+
 const Tools = () => {
   return (
     <div className='cotainer-skillC' data-aos="zoom-in">
@@ -23,6 +25,18 @@ const Tools = () => {
       </div>
       <div className='wrapper-skillC'>
         <FaCoffee color='brown'/>
+      </div>
+      <div className="wrapper-skillC">
+        <FaNpm color="red" />
+      </div>
+      <div className='wrapper-skillC'>
+        <SiJirasoftware color='blue'/>
+      </div>
+      <div className='wrapper-skillC'>
+        <SiPostman color='#EF5B25'/>
+      </div>
+      <div className='wrapper-skillC'>
+        <SiTrello color='blue'/>
       </div>
     </div>
   )

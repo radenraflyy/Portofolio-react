@@ -51,6 +51,11 @@
         align-items: center;
         gap: 20px;
 
+        a{
+          text-decoration: none;
+          color: #fff;
+        }
+
         .bg-sosmed{
           color: #fff;
           background-color: #333;
@@ -79,6 +84,11 @@
         h3{
           margin: 0;
           line-height: 37px;
+        }
+
+        a{
+          color: black;
+          font-weight: 800;
         }
 
         .contentA{
