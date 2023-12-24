@@ -42,7 +42,7 @@ const Skills = () => {
         <FaReact color="#56b0ff" />
       </div>
       <div className="wrapper-skillC">
-        <FaVuejs color="green " />
+        <FaVuejs color="green" />
       </div>
       <div className="wrapper-skillC">
         <FaSass color="pink" />

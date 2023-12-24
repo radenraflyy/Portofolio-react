@@ -1,6 +1,6 @@
 import './skills.scss'
-import { FaGit, FaGithub, FaGitlab, FaChrome, FaSpotify, FaCoffee, FaNpm, FaWhatsapp} from 'react-icons/fa'
-import { SiJirasoftware, SiPostman, SiTrello } from "react-icons/si"
+import { FaGit, FaGithub, FaGitlab, FaChrome, FaSpotify, FaCoffee, FaNpm, FaWhatsapp } from 'react-icons/fa'
+import { SiJirasoftware, SiPostman, SiTrello, SiVisualstudiocode, SiWindowsterminal, SiVercel, SiNetlify } from "react-icons/si"
 
 const Tools = () => {
   return (
@@ -37,6 +37,18 @@ const Tools = () => {
       </div>
       <div className='wrapper-skillC'>
         <SiTrello color='blue'/>
+      </div>
+      <div className='wrapper-skillC'>
+        <SiVisualstudiocode color='#56b0ff'/>
+      </div>
+      <div className='wrapper-skillC'>
+        <SiWindowsterminal color='#000'/>
+      </div>
+      <div className='wrapper-skillC'>
+        <SiVercel />
+      </div>
+      <div className='wrapper-skillC'>
+        <SiNetlify color='#00C7B7'/>
       </div>
     </div>
   )
