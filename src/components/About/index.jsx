@@ -3,6 +3,7 @@ import CardAbout from "./CardAbout"
 import { useGlobalContext } from "../../context/DarkModeContext"
 import { useMediaQuery } from "react-responsive"
 import MyPhoto from "../../assets/photo-me.png"
+import MyCv from "../../assets/CV-RadenRaflypradanakusumah.pdf"
 
 const About = () => {
   const { darkMode } = useGlobalContext()
@@ -51,7 +52,13 @@ const About = () => {
                   style={{ width: isMobile ? "100%" : "" }}
                   className={darkMode ? "btndark2" : "btn2"}
                 >
-                  Download CV
+                  <a
+                    href={MyCv}
+                    download={"CV_Raden Rafly Pradana Kusumah.pdf"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Download CV
+                  </a>
                 </button>
               </div>
             </div>
