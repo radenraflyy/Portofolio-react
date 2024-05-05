@@ -2,7 +2,7 @@ import "./style.scss"
 import CardAbout from "./CardAbout"
 import { useGlobalContext } from "../../context/DarkModeContext"
 import { useMediaQuery } from "react-responsive"
-import MyPhoto from "../../assets/photo-me.png"
+import MyPhoto from "../../assets/photo-me.jpg"
 import MyCv from "../../assets/CV-RadenRaflypradanakusumah.pdf"
 
 const About = () => {
@@ -23,30 +23,23 @@ const About = () => {
               <div className="line"></div>
             </div>
             <div className="content-about">
-              <h1 className={darkMode ? "contentH1" : ""}>
-                Hi, I'm Raden Rafly.
-              </h1>
+              <h1 className={darkMode ? "contentH1" : ""}>Hi,I'm Rafly.</h1>
               <p className={darkMode ? "contentP" : ""}>
-                "In a rapidly changing world, the role of a software engineer
-                serves as the foundation for boundless innovation. Every line of
-                code we write is a step towards previously unimaginable
-                solutions. From simplifying everyday life to reshaping how we
-                interact with the world, your role holds an infinite impact.
-                Stay passionate about solving problems because within each
-                challenge lies a tremendous opportunity to grow and inspire. The
-                world of technology is an endless field for learning, where we
-                not only follow trends but also shape the future. Be part of a
-                solid community, sharing knowledge and inspiring one another to
-                reach unforeseen potential. Through our dedication as software
-                engineers, we have the power to create extraordinary impact and
-                change the world."
+                Full Stack Developer experienced in maintaining software to make
+                it fully functional. Combining my expertise in frontend and
+                backend web development, I am able to build complete and
+                customized web applications. that are complete and fit for
+                purpose. I have in-depth knowledge of several programming
+                languages and frameworks, as well as an understanding of full
+                stack development. I always keep up with the latest technology
+                and eager to apply it in my projects.
               </p>
               <div className="button-about">
                 <button
                   style={{ width: isMobile ? "100%" : "" }}
                   className={darkMode ? "btndark1" : "btn1"}
                 >
-                  Hire Me
+                  <a href="tel:+6283895938361" style={{ textDecoration: "none", color: "white" }}>Hire Me</a>
                 </button>
                 <button
                   style={{ width: isMobile ? "100%" : "" }}

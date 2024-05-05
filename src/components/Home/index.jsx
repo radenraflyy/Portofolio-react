@@ -12,7 +12,7 @@ const HomeComponent = () => {
           <img src={MyBg} alt="..." />
         </div>
         <div className="title">
-          <h1>I'm Software Engineer & Build Creative Products</h1>
+          <h1>I'm FullStack Developer & Build Creative Products</h1>
           <button className="btn">Get In Touch</button>
         </div>
         <div className="footer">

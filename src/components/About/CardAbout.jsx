@@ -24,9 +24,6 @@ const CardAbout = () => {
             <h1>3+</h1>
             <p>Years Of Experience</p>
           </div>
-          <div className="row">
-            <h3 style={{color: '#bbb', fontSize: '25px'}}>></h3>
-          </div>
         </div>
         <div className="wrapper-about">
           <div className="icon">
@@ -36,9 +33,6 @@ const CardAbout = () => {
             <h1>51+</h1>
             <p>Completed Projects</p>
           </div>
-          <div className="row">
-            <h3 style={{color: '#bbb', fontSize: '25px'}}>></h3>
-          </div>
         </div>
         <div className="wrapper-about">
           <div className="icon">
@@ -47,9 +41,6 @@ const CardAbout = () => {
           <div className="content">
             <h1>5+</h1>
             <p style={{padding: '0 25px'}}>Happy Client</p>
-          </div>
-          <div className="row">
-            <h3 style={{color: '#bbb', fontSize: '25px'}}>></h3>
           </div>
         </div>
       </div>

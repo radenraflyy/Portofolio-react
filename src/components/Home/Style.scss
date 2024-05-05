@@ -19,11 +19,15 @@
     left: 50%;
     transform: translateX(-50%);
     top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #b6b3ad;
     font-weight: bold;
 
     h1{
-      font-size: 4.7vw;
+      font-size: 4.2vw;
       max-width: 800px;
     }
 

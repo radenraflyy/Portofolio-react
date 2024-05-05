@@ -11,16 +11,16 @@ nav {
   background-color: #f1f1f1;
 }
 
-.menuBars{
+.menuBars {
   display: none;
 }
 
-.navDark{
+.navDark {
   @extend nav;
   background-color: #333;
   color: #f1f1f1;
 
-  .menu ul li a{
+  .menu ul li a {
     color: #f1f1f1;
     font-weight: 500;
   }
@@ -32,7 +32,7 @@ nav {
 
 .menu ul {
   list-style-type: none;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -51,24 +51,33 @@ nav {
         padding: 10px 0;
         margin: 0;
         border-bottom: 2px solid;
-      }    
+      }
     }
   }
 }
 
-.darkMode  {
+.darkMode {
   position: relative;
   display: flex;
   align-items: center;
   border-radius: 50px;
   background-color: #b0b0b0;
   width: 70px;
-  height: 25px;
+  padding: 5px;
   margin-right: 80px;
 }
 
+.darkModeMobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #b0b0b0;
+  width: 70px;
+  padding: 5px;
+}
 
-.iconCheck{
+.iconCheck {
   width: 100%;
   padding: 0 7px;
   display: flex;
@@ -81,7 +90,7 @@ input:checked + .darkMode {
   background-color: #444;
 }
 
-input:checked + .darkMode .iconCheck{
+input:checked + .darkMode .iconCheck {
   transform: translateX(42px);
 }
 
@@ -89,24 +98,22 @@ input {
   display: none;
 }
 
-
-
 @media (max-width: 768px) {
   .bars {
     display: none;
     transition: opacity 0.5s ease;
     animation: fadeOut 0.5s ease forwards;
-  } 
+  }
 
-  .menuActive{
+  .menuActive {
     display: block;
     transition: opacity 0.5s ease;
     animation: fadeOut 0.5s ease forwards;
   }
-  
+
   .bars ul {
     list-style-type: none;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     justify-content: center;
     display: flex;
@@ -118,32 +125,30 @@ input {
     left: 0;
     width: 100%;
     cursor: pointer;
-  
+
     li {
       margin: 10px 0;
-      
+
       a {
         text-decoration: none;
         color: #333;
         font-weight: 500;
-  
+
         &:hover {
           font-weight: 600;
           padding: 10px 0;
           margin: 0;
           border-bottom: 2px solid;
-        }    
+        }
       }
     }
   }
 
-  
-  .darkBg ul{
+  .darkBg ul {
     @extend .bars;
     background-color: #333;
-    li{
-
-      a{
+    li {
+      a {
         color: #fff;
       }
     }
@@ -152,8 +157,8 @@ input {
   .logo h2 {
     margin: 0 0 0 15px;
   }
-  
-  .menuBars{
+
+  .menuBars {
     display: block;
     font-size: 30px;
     margin-right: 15px;
